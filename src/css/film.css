@@ -1,0 +1,162 @@
+.film-information {
+    max-width: 50%;
+    margin-top: 2rem;
+    background-color: transparent !important;
+    border: none !important;
+    outline-color: transparent !important;
+}
+
+.review-information {
+    max-width: 50%;
+    margin-top: 2rem;
+    background-color: #1a1a1a !important;
+}
+
+.content-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient( to top, rgba(26, 26, 26, 0.85), rgba(26, 26, 26, 0.85), rgba(26, 26, 26, 0.85), rgba(26, 26, 26, 0.85), rgba(26, 26, 26, 0.85));
+    color: white;
+    padding: 10px;
+    border-top: solid black 2px;
+    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    display: flex;
+    flex-flow: column wrap ;
+}
+
+
+.description {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+    text-align: left;
+    height: fit-content !important;
+    max-width: 100% !important;
+    overflow-wrap: break-word !important;
+}
+
+.facts {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.basic-info {
+    background-color: #800000 !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+    color: white !important;
+    font-size: 1rem !important;
+    margin-bottom: 10px;
+}
+
+.small-basic-info {
+    background-color: #800000 !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+    color: white !important;
+    font-size: 0.7rem !important;
+    margin-bottom: 10px;
+}
+
+.director-info-film {
+    width: fit-content !important;
+    background-color: #800000 !important;
+    color: white !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+    font-size: 1rem !important;
+    align-self: flex-start;
+}
+
+.key-info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 10px !important;
+}
+
+.review {
+    display: inline-block;
+    margin: 0.2rem;
+    height: available;
+    width: 20rem;
+    flex-shrink: 0;
+    border: #000000 solid 1px;
+    background-color: rgba(0, 0, 0, 0) !important;
+    overflow-wrap: break-word !important;
+}
+
+.related {
+    display: inline-block;
+    margin: 0.2rem;
+    height: fit-content;
+    width: 15rem;
+    flex-shrink: 0;
+    background-color: rgb(0, 0, 0) !important;
+    overflow-wrap: break-word !important;
+}
+
+
+.the-reviews {
+    display: flex;
+    overflow-x: auto !important;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.empty-rating {
+    color: transparent;
+}
+
+.review-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    min-width: 90%;
+}
+
+.timestamp {
+    color: #868686;
+}
+
+.related-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    min-width: 100%;
+}
+
+.related-film-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 0.7rem;
+}
+
+.link {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s;
+    margin: 0.2rem;
+    height: fit-content;
+    width: 15rem;
+    flex-shrink: 0;
+    background-color: rgb(0, 0, 0) !important;
+    overflow-wrap: break-word !important;
+}
+
+.link:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1000px) {
+    .film-information {
+        max-width: 100%;
+    }
+    .review-information {
+        max-width: 100%;
+    }
+}

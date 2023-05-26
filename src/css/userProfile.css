@@ -1,0 +1,21 @@
+.user-profile-info {
+    max-width: 50%;
+    margin-top: 2rem;
+    background-color: transparent !important;
+    border: none !important;
+    outline-color: transparent !important;
+}
+
+.user-profile-content {
+    background-color: #1a1a1a !important;
+}
+
+.user-fun-info {
+    gap: 20px;
+}
+
+@media (max-width: 1000px) {
+    .user-profile-info {
+        max-width: 90%;
+    }
+}
